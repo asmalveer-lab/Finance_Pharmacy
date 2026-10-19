@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101d3a">
+<title>Global Study Portal BD | Plan your funded study journey</title>
+<style>
+:root{--bg:#f4f7fb;--panel:#fff;--text:#17233b;--muted:#64748b;--line:#dce4ef;--navy:#101d3a;--navy2:#172a50;--green:#0d9b72;--green2:#dff7ed;--indigo:#5965e8;--indigo2:#eef0ff;--amber:#fff3d8;--red:#b42318;--shadow:0 12px 34px #172a5010}
+[data-theme="dark"]{--bg:#0b1220;--panel:#111c2e;--text:#e7edf8;--muted:#a4b1c6;--line:#29364d;--navy:#080f1d;--navy2:#111c2e;--green2:#123c33;--indigo2:#24284c;--amber:#44371c;--shadow:0 12px 34px #0003}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}button,input,select,textarea{font:inherit}button,a,select,input,textarea{outline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f6b73c}a{color:var(--indigo);text-decoration:none}a:hover{text-decoration:underline}.top{background:linear-gradient(120deg,var(--navy),#203e6b);color:white;padding:16px max(20px,calc((100% - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px}.brandmark{width:42px;height:42px;border-radius:13px;background:#ffffff19;display:grid;place-items:center;font-weight:900;color:#70e0bd;border:1px solid #ffffff2c}.brand h1{font-size:17px;line-height:1.2;margin:0}.brand small{color:#c6d4eb}.top-actions{display:flex;gap:8px;align-items:center}.btn{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:9px 13px;border-radius:10px;cursor:pointer;font-weight:650;transition:.15s}.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}.btn.primary{background:var(--green);color:white;border-color:var(--green)}.btn.ghost{background:#ffffff12;border-color:#ffffff35;color:white}.btn.small{padding:6px 10px;font-size:13px}.wrap{max-width:1180px;margin:auto;padding:22px 20px 60px}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:stretch;margin:8px 0 22px}.hero-main{background:linear-gradient(135deg,#122344,#254a73);color:#fff;border-radius:22px;padding:30px;position:relative;overflow:hidden}.hero-main:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;border:36px solid #ffffff0c;right:-65px;top:-75px}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800;color:#74e1c0}.hero h2{font-size:clamp(27px,4vw,42px);line-height:1.1;margin:10px 0 12px;max-width:680px}.hero p{color:#d7e3f2;max-width:640px;margin:0 0 20px}.hero-side{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}.stat{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}.stat:last-child{border:0}.stat strong{font-size:21px}.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:5px 9px;background:var(--green2);color:var(--green);font-size:12px;font-weight:750}.muted{color:var(--muted)}.tabs{display:flex;gap:7px;overflow:auto;padding:6px;background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:22px;position:sticky;top:8px;z-index:10;box-shadow:var(--shadow)}.tab{border:0;background:transparent;color:var(--muted);padding:10px 13px;border-radius:9px;white-space:nowrap;cursor:pointer;font-weight:700}.tab.active{background:var(--navy);color:white}.section{display:none}.section.active{display:block;animation:fade .18s ease}@keyframes fade{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:0 0 17px}.section-head h2{font-size:25px;margin:0 0 4px}.section-head p{margin:0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);min-width:0}.card h3{margin:0 0 8px;font-size:17px}.card p{margin:7px 0;color:var(--muted)}.card .meta{font-size:12px;color:var(--muted)}.stepnum{width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:var(--indigo2);color:var(--indigo);font-weight:850;margin-bottom:12px}.field{display:flex;flex-direction:column;gap:6px;margin:10px 0}.field label{font-weight:700;font-size:13px}.field input,.field select,.field textarea,.search{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:10px 12px;min-width:0}.field textarea{min-height:115px;resize:vertical}.filters{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:10px;margin-bottom:16px}.filters .field{margin:0}.country-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.country-card{display:flex;flex-direction:column;gap:10px}.country-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.country-top h3{margin:0}.tag{font-size:11px;border:1px solid var(--line);padding:3px 7px;border-radius:6px;color:var(--muted)}.scheme{border-top:1px solid var(--line);padding-top:9px;margin-top:2px}.scheme strong{font-size:13px}.scheme p{font-size:13px;margin:3px 0}.notice{padding:12px 14px;border-radius:12px;background:var(--amber);font-size:13px;margin:12px 0}.progress{height:9px;background:var(--line);border-radius:99px;overflow:hidden}.progress span{height:100%;display:block;width:0;background:linear-gradient(90deg,var(--green),#61d6b1);transition:width .2s}.checklist{display:grid;gap:9px}.checkrow{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid var(--line);border-radius:10px}.checkrow input{margin-top:5px;accent-color:var(--green)}.checkrow span{flex:1}.checkrow.done span{text-decoration:line-through;color:var(--muted)}.wizardbar{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0}.wizardstep{padding:7px 10px;border:1px solid var(--line);border-radius:9px;font-size:12px;color:var(--muted)}.wizardstep.current{background:var(--indigo2);color:var(--indigo);border-color:var(--indigo)}.wizardstep.done{background:var(--green2);color:var(--green)}.hidden{display:none!important}.result{padding:14px;border:1px dashed var(--line);border-radius:12px;background:var(--bg);white-space:pre-wrap;overflow-wrap:anywhere}.footer{border-top:1px solid var(--line);padding-top:20px;margin-top:35px;color:var(--muted);font-size:12px}.empty{padding:25px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px;grid-column:1/-1}.inline{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.inline>*{flex:1}.inline .btn{flex:0 0 auto}.check-title{display:flex;justify-content:space-between;gap:12px;align-items:center}.barrow{display:grid;grid-template-columns:115px 1fr 36px;gap:10px;align-items:center;font-size:13px;margin:10px 0}.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;background:var(--indigo)}.smalltext{font-size:12px;color:var(--muted)}.divider{height:1px;background:var(--line);margin:15px 0}.country-heading h3{margin:0;font-size:19px;color:var(--text)}#uniGrid{grid-template-columns:repeat(3,minmax(0,1fr))}#matchResults .card{min-width:0}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.grid,.country-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.tabs{top:4px}}
+@media(max-width:560px){.top{align-items:flex-start}.brand h1{font-size:15px}.top-actions{flex-direction:column;align-items:stretch}.wrap{padding:14px 12px 40px}.hero-main{padding:23px}.grid,.grid.two,.country-grid{grid-template-columns:1fr}.filters{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.tabs{border-radius:11px}.tab{padding:9px 11px}.barrow{grid-template-columns:90px 1fr 28px}}
+</style>
+
+<style>
+.uni-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.uni-actions .btn{flex:0 0 auto}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="brand"><div class="brandmark">GS</div><div><h1>Global Study Portal BD</h1><small>Plan smarter. Apply with confidence.</small></div></div>
+ <div class="top-actions"><button class="btn ghost small" id="themeBtn" aria-label="Toggle dark mode">◐ Theme</button><button class="btn ghost small" id="printBtn">Print plan</button></div>
+</header>
+<main class="wrap">
+ <div class="hero">
+  <div class="hero-main"><div class="eyebrow">Your study-abroad command centre</div><h2>Turn your study abroad goal into a clear plan.</h2><p>Explore funding routes, shortlist destinations, prepare application materials, contact professors and track your progress from Bangladesh.</p><div class="inline"><button class="btn primary" data-goto="planner">Build my plan →</button><button class="btn ghost" data-goto="countries">Explore destinations</button></div></div>
+  <aside class="hero-side"><div class="check-title"><strong>Your journey at a glance</strong><span class="pill">Personal workspace</span></div><div class="stat"><span class="muted">Roadmap complete</span><strong id="heroPct">0%</strong></div><div class="progress"><span id="heroProgress"></span></div><div class="stat"><span class="muted">Saved shortlist</span><strong id="shortlistCount">0</strong></div><div class="stat"><span class="muted">Next action</span><strong style="font-size:14px" id="nextAction">Choose your track</strong></div><p class="smalltext">Your roadmap is saved in this browser when storage is available.</p></aside>
+ </div>
+ <nav class="tabs" role="tablist" aria-label="Main sections">
+  <button class="tab active" data-tab="planner" role="tab" aria-selected="true">1. My plan</button>
+  <button class="tab" data-tab="countries" role="tab" aria-selected="false">2. Countries & funding</button>
+  <button class="tab" data-tab="apply" role="tab" aria-selected="false">3. Apply guide</button>
+  <button class="tab" data-tab="simulator" role="tab" aria-selected="false">4. Demo application</button>
+  <button class="tab" data-tab="universities" role="tab" aria-selected="false">5. Universities</button>
+  <button class="tab" data-tab="professors" role="tab" aria-selected="false">6. Professor outreach</button>
+  <button class="tab" data-tab="roadmap" role="tab" aria-selected="false">7. Roadmap</button>
+ </nav>
+
+ <section class="section active" id="planner" role="tabpanel">
+  <div class="section-head"><div><h2>Build your personal study plan</h2><p>Choose a starting point and get a practical next-step checklist.</p></div><span class="pill">Planning tool</span></div>
+  <div class="grid two">
+   <div class="card"><h3>Your profile</h3><p>These answers shape the suggested route. You can change them any time.</p>
+    <div class="field"><label for="track">Academic track</label><select id="track"><option value="">Choose a track</option><option>Finance and Economics</option><option>Pharmacy and Biotechnology</option><option>Other / interdisciplinary</option></select></div>
+    <div class="field"><label for="degree">Target degree</label><select id="degree"><option value="">Choose a degree</option><option>Master's</option><option>PhD</option><option>Both / undecided</option></select></div>
+    <div class="field"><label for="funding">Funding priority</label><select id="funding"><option value="">Choose a priority</option><option>Fully funded only</option><option>Tuition waiver + stipend</option><option>Low tuition / affordable route</option><option>Any suitable option</option></select></div>
+    <div class="field"><label for="language">Preferred teaching language</label><select id="language"><option value="">Flexible</option><option>English-taught</option><option>Open to local language</option></select></div>
+    <div class="field"><label for="intake">Target intake (optional)</label><input id="intake" placeholder="e.g. Fall 2027 or 2028"></div>
+    <div class="field"><label for="budget">Estimated yearly budget (optional, BDT)</label><input id="budget" type="number" min="0" placeholder="e.g. 500000"></div>
+    <button class="btn primary" id="makePlan">Create my action plan</button>
+   </div>
+   <div class="card"><h3>Your recommended starting route</h3><div id="planResult"><p class="muted">Complete the profile and select “Create my action plan” to see a tailored starting checklist.</p></div><div class="divider"></div><h3>Funding route at a glance</h3><div class="barrow"><span>PhD</span><div class="bar"><span style="width:90%"></span></div><b>High</b></div><p class="smalltext">Research assistantships, funded doctoral positions and supervisor-backed projects are often worth investigating first for PhD applicants. Funding varies by institution and subject.</p><div class="barrow"><span>Master's</span><div class="bar"><span style="width:60%"></span></div><b>Mixed</b></div><p class="smalltext">Scholarships, government schemes, tuition waivers and lower-cost public universities are common routes. These bars are general guidance, not probability estimates.</p></div>
+  </div>
+  <div class="grid" style="margin-top:14px"><div class="card"><div class="stepnum">01</div><h3>Clarify your target</h3><p>Decide degree, subject, intake, budget and whether you need full funding.</p></div><div class="card"><div class="stepnum">02</div><h3>Build evidence</h3><p>Prepare transcripts, CV, language-test plan, recommendation contacts and research interests.</p></div><div class="card"><div class="stepnum">03</div><h3>Apply in batches</h3><p>Track official deadlines in a spreadsheet and verify each opportunity at its source.</p></div></div>
+ </section>
+
+ <section class="section" id="countries" role="tabpanel">
+  <div class="section-head"><div><h2>Countries & funding explorer</h2><p>Use the filters to build a shortlist. Always verify the current call on official websites.</p></div><button class="btn" id="clearFilters">Clear filters</button></div>
+  <div class="filters">
+   <div class="field"><label for="countrySearch">Search countries, schemes or universities</label><input id="countrySearch" placeholder="Try DAAD, Japan, economics..."></div>
+   <div class="field"><label for="countryTrack">Track</label><select id="countryTrack"><option value="">All tracks</option><option>Finance and Economics</option><option>Pharmacy and Biotechnology</option><option>Both / broad</option></select></div>
+   <div class="field"><label for="countryDegree">Degree level</label><select id="countryDegree"><option value="">All levels</option><option>Master's</option><option>PhD</option><option>Both</option></select></div>
+   <div class="field"><label for="countryLang">Language</label><select id="countryLang"><option value="">Any</option><option>English-taught options</option><option>Local language may be needed</option></select></div>
+  </div>
+  <div class="notice">Source status: links are starting points and have not been live-checked in this demo. Scheme names and eligibility can change. Do not treat this page as a live scholarship database.</div>
+  <div class="country-grid" id="countryGrid"></div>
+ </section>
+
+ <section class="section" id="apply" role="tabpanel">
+  <div class="section-head"><div><h2>Application procedure</h2><p>A step-by-step workflow for Master's, PhD and government scholarship applications.</p></div></div>
+  <div class="grid two">
+   <div class="card"><h3>Master's application path</h3><div class="checklist" id="mastersSteps"></div></div>
+   <div class="card"><h3>PhD application path</h3><div class="checklist" id="phdSteps"></div></div>
+   <div class="card"><h3>Government scholarship path</h3><div class="checklist" id="govSteps"></div></div>
+   <div class="card"><h3>Common mistakes to avoid</h3><ul><li>Relying on an old social-media post instead of the official call.</li><li>Assuming admission automatically includes funding.</li><li>Using one generic SOP for every programme.</li><li>Missing document certification, translation or referee requirements.</li><li>Paying an agent who guarantees admission or a scholarship.</li><li>Sending money or passport scans to an unverified contact.</li><li>Ignoring visa financial evidence and application lead times.</li></ul><div class="notice">Scam warning: no legitimate adviser can guarantee a scholarship, admission or visa decision.</div></div>
+  </div>
+  <div class="card" style="margin-top:14px"><h3>Where do applications usually go?</h3><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;min-width:520px"><thead><tr><th align="left">Route</th><th align="left">Common channel</th><th align="left">What to verify</th></tr></thead><tbody id="channelRows"></tbody></table></div><p class="smalltext">The channel depends on the specific scheme and university. A country may use more than one route.</p></div>
+ </section>
+
+ <section class="section" id="simulator" role="tabpanel">
+  <div class="section-head"><div><h2>Demo application simulator</h2><p>Practice the flow before using a real university portal. This demo does not submit or store an application.</p></div><span class="pill">Simulation only</span></div>
+  <div class="card"><div class="wizardbar" id="wizardBar"></div><div id="wizardContent"></div><div class="inline" style="margin-top:16px"><button class="btn" id="wizardBack">← Back</button><button class="btn primary" id="wizardNext">Continue →</button><button class="btn hidden" id="wizardRestart">Start a new demo</button></div><div id="wizardMsg" class="smalltext" style="margin-top:10px" aria-live="polite"></div></div>
+  <div class="notice">Privacy: this practice form is not connected to any institution. Do not enter passwords, passport numbers, or sensitive personal data.</div>
+ </section>
+
+ <section class="section" id="universities" role="tabpanel">
+  <div class="section-head"><div><h2>University research desk</h2><p>Browse a larger country-sorted directory of universities with official website links and subject areas related to finance, economics, accounting, pharmacy and biotechnology.</p></div></div>
+  <div class="grid two" style="margin-bottom:14px">
+   <div class="card"><h3>Find universities by country and subject</h3><div class="field"><label for="uniSearch">Search university, country or subject</label><input id="uniSearch" placeholder="e.g. Heidelberg, Toronto, biotechnology"></div>
+    <div class="filters" style="grid-template-columns:repeat(2,minmax(0,1fr))"><div class="field"><label for="uniCountry">Country</label><select id="uniCountry"><option value="">All countries</option></select></div><div class="field"><label for="uniTrack">Subject area</label><select id="uniTrack"><option value="">All subjects</option><option value="finance">Finance, economics or accounting</option><option value="bio">Pharmacy or biotechnology</option></select></div><div class="field"><label for="uniDegree">Degree level</label><select id="uniDegree"><option value="">All levels</option><option value="Master's">Master's</option><option value="PhD">PhD</option></select></div><div class="field"><label for="uniSaved">Shortlist</label><select id="uniSaved"><option value="">All universities</option><option value="saved">Saved only</option></select></div></div>
+    <p class="smalltext" id="uniCount" aria-live="polite">Loading university list...</p>
+   </div>
+   <div class="card"><h3>University match assistant</h3><p>Enter your target profile to rank directory entries by subject and study goals. This is a transparent rule-based guide, not a live AI service or an admission decision.</p>
+    <div class="field"><label for="matchTrack">Your subject</label><select id="matchTrack"><option value="Finance and Economics">Finance, Economics or Accounting</option><option value="Pharmacy and Biotechnology">Pharmacy or Biotechnology</option></select></div>
+    <div class="field"><label for="matchDegree">Target degree</label><select id="matchDegree"><option>Master's</option><option>PhD</option></select></div>
+    <div class="field"><label for="matchFunding">Funding need</label><select id="matchFunding"><option>Fully funded</option><option>Tuition scholarship</option><option>Affordable tuition</option><option>Flexible</option></select></div>
+    <div class="field"><label for="matchCountry">Preferred country (optional)</label><select id="matchCountry"><option value="">Open to all countries</option></select></div>
+    <div class="field"><label for="matchNotes">Your background (optional)</label><textarea id="matchNotes" placeholder="e.g. BBA in Finance, CGPA 3.45/4, research interest in financial inclusion, IELTS 7.0"></textarea></div>
+    <button class="btn primary" id="runMatch">Suggest suitable universities</button>
+   </div>
+  </div>
+  <div id="matchResults" class="grid two" aria-live="polite"></div>
+  <div class="notice">This expanded directory is sorted alphabetically by country, then university name. Subject tags indicate broad areas to investigate, not confirmation that a specific programme is open or taught in English. University names are starting points, not a claim that a programme or funding call is currently open. Confirm degree availability, admission criteria, tuition and funding on the official website.</div>
+  <div class="grid" id="uniGrid"></div>
+  <div class="card" style="margin-top:14px"><h3>Before you shortlist a university</h3><div class="grid two"><div class="checklist" id="uniChecklistA"></div><div class="checklist" id="uniChecklistB"></div></div></div>
+ </section>
+
+ <section class="section" id="professors" role="tabpanel">
+  <div class="section-head"><div><h2>Professor outreach assistant</h2><p>Draft a clear, personalised email. Missing details remain visible placeholders.</p></div></div>
+  <div class="grid two">
+   <div class="card"><h3>Your email details</h3>
+    <div class="field"><label for="yourName">Your name</label><input id="yourName" placeholder="[Your full name]"></div>
+    <div class="field"><label for="yourDegree">Current degree / institution</label><input id="yourDegree" placeholder="[Current degree and institution]"></div>
+    <div class="field"><label for="profName">Professor's name</label><input id="profName" placeholder="[Professor's name]"></div>
+    <div class="field"><label for="profWork">Relevant paper / research area</label><input id="profWork" placeholder="[Paper title or research area]"></div>
+    <div class="field"><label for="yourInterest">Your research interest</label><textarea id="yourInterest" placeholder="[Briefly describe your research interest]"></textarea></div>
+    <div class="field"><label for="targetDegree">Target programme and intake</label><input id="targetDegree" placeholder="[PhD/Master's, programme, intake]"></div>
+    <div class="inline"><button class="btn primary" id="generateEmail">Generate email</button><button class="btn" id="clearEmail">Clear</button></div>
+   </div>
+   <div class="card"><h3>Editable draft</h3><div class="field"><label for="emailSubject">Subject</label><input id="emailSubject" value="Prospective [PhD/Master's] applicant interested in [research area]"></div><div class="field"><label for="emailDraft">Email body</label><textarea id="emailDraft" style="min-height:310px">Dear [Professor's name],
+
+I hope you are doing well. My name is [Your full name], and I am [Current degree and institution].
+
+I read your work on [Paper title or research area] and was interested in how it relates to [Briefly describe your research interest].
+
+I am exploring [PhD/Master's, programme, intake] opportunities and would be grateful to know whether you expect to consider students in this area. I have attached my CV for context, if appropriate.
+
+Thank you for your time and consideration.
+
+Best regards,
+[Your full name]</textarea></div><button class="btn primary" id="copyEmail">Copy email</button><span id="copyMsg" class="smalltext" aria-live="polite"></span></div>
+  </div>
+  <div class="grid" style="margin-top:14px">
+   <div class="card"><h3>Find research and authors</h3><p><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a> <span class="tag">Not live-checked</span></p><p><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a> <span class="tag">Not live-checked</span></p></div>
+   <div class="card"><h3>Economics and social science</h3><p><a href="https://repec.org/" target="_blank" rel="noopener">RePEc</a> <span class="tag">Not live-checked</span></p><p><a href="https://www.ssrn.com/" target="_blank" rel="noopener">SSRN</a> <span class="tag">Not live-checked</span></p></div>
+   <div class="card"><h3>Researcher identity</h3><p><a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a> <span class="tag">Not live-checked</span></p><p class="smalltext">Check the professor's current university profile before writing. Never guess an email address.</p></div>
+  </div>
+ </section>
+
+ <section class="section" id="roadmap" role="tabpanel">
+  <div class="section-head"><div><h2>Your nine-phase roadmap</h2><p>Tick off tasks as you complete them. Progress is saved locally in this browser where supported.</p></div><button class="btn" id="resetRoadmap">Reset roadmap</button></div>
+  <div class="card"><div class="check-title"><strong id="roadmapCount">0 of 27 tasks complete</strong><span id="roadmapPercent" class="pill">0%</span></div><div class="progress" style="margin:12px 0 20px"><span id="roadmapProgress"></span></div><div id="roadmapGroups" class="grid two"></div><div class="divider"></div><h3>Add a custom task</h3><div class="inline"><input class="search" id="customTask" placeholder="e.g. Request official transcript"><button class="btn primary" id="addTask">Add task</button></div><p class="smalltext">Roadmap items are stored on this device only. Clearing browser data may remove them.</p></div>
+ </section>
+ <footer class="footer"><strong>Important disclaimer</strong><p>This website is a planning guide, not a live database or legal, immigration or admissions advice. Scholarship availability, deadlines, eligibility, fees, visa rules and programme requirements change. Always confirm information through the relevant official institution or authority. Admissions, funding and visa decisions are made solely by those institutions and authorities. No admission or funding outcome is guaranteed.</p><p>Built as a self-contained demo. External links are marked “Not live-checked” and should be verified before use. No application is submitted by this site.</p></footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const safeStore={get(k,fallback){try{const v=localStorage.getItem(k);return v?JSON.parse(v):fallback}catch(e){return fallback}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}};
+const countries=[
+{name:"Germany",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"English-taught options",scheme:"DAAD scholarships",url:"https://www.daad.de/en/",note:"Explore DAAD funding and university-specific research or graduate funding. Individual calls set eligibility and deadlines.",language:"Many English-taught graduate programmes; German may matter for daily life and some programmes.",unis:["University of Mannheim","Heidelberg University","Technical University of Munich"]},
+{name:"United Kingdom",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"English-taught options",scheme:"Chevening; Commonwealth Scholarships; university awards",url:"https://www.chevening.org/",note:"Check each scheme's current country eligibility and award rules, plus university funding pages.",language:"English; IELTS, TOEFL or other accepted evidence may be required.",unis:["University of Oxford","University of Cambridge","University College London"]},
+{name:"United States",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"English-taught options",scheme:"Fulbright Foreign Student Program; university assistantships",url:"https://foreign.fulbrightonline.org/",note:"Funding structures differ by department and degree. Research assistantships and doctoral funding are programme-specific.",language:"English; accepted tests vary by institution and waiver policy.",unis:["MIT","Harvard University","University of California, Berkeley"]},
+{name:"Canada",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"English-taught options",scheme:"Vanier CGS information; university awards",url:"https://vanier.gc.ca/",note:"Check current federal programme status and successor or institutional awards before planning around any named scheme.",language:"English or French depending on institution and programme; accepted tests vary.",unis:["University of Toronto","University of British Columbia","McGill University"]},
+{name:"Japan",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"Local language may be needed",scheme:"MEXT scholarship",url:"https://www.studyinjapan.go.jp/en/",note:"Review embassy-recommendation and university-recommendation routes, current call documents and eligible fields.",language:"Some graduate programmes are in English; Japanese may be needed for other programmes and daily life.",unis:["University of Tokyo","Kyoto University","Osaka University"]},
+{name:"South Korea",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"Local language may be needed",scheme:"Global Korea Scholarship (GKS)",url:"https://www.studyinkorea.go.kr/",note:"Use the current GKS guideline for country-specific route, documents, timelines and eligible universities.",language:"English-taught options exist; Korean language study may be part of some scholarship routes.",unis:["Seoul National University","KAIST","Yonsei University"]},
+{name:"China",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"Local language may be needed",scheme:"Chinese Government Scholarship (CSC)",url:"https://www.campuschina.org/",note:"Check the official annual call and university or embassy route. Verify programme language and eligible institutions.",language:"English-taught programmes exist; Chinese may be required for some degrees or clinical work.",unis:["Peking University","Tsinghua University","Fudan University"]},
+{name:"Hungary",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"English-taught options",scheme:"Stipendium Hungaricum",url:"https://stipendiumhungaricum.hu/",note:"Check Bangladesh partner-country availability, sending-partner steps and the current call.",language:"Many international programmes are taught in English; language rules vary.",unis:["Corvinus University of Budapest","University of Szeged","Eötvös Loránd University"]},
+{name:"Sweden",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"English-taught options",scheme:"Swedish Institute scholarships; salaried doctoral vacancies",url:"https://si.se/en/",note:"Confirm eligible countries and programmes for the current SI call. Many PhD positions are recruited as jobs.",language:"Many Master's and PhD options in English; some local-language requirements apply.",unis:["Lund University","Uppsala University","Karolinska Institutet"]},
+{name:"Netherlands",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"English-taught options",scheme:"University scholarships; national and EU research funding",url:"https://www.studyinnl.org/",note:"Funding is often institution- or project-specific. Verify scholarship availability and tuition for non-EEA students.",language:"Many graduate programmes in English; check programme-specific requirements.",unis:["Erasmus University Rotterdam","University of Amsterdam","Wageningen University"]},
+{name:"Finland",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"English-taught options",scheme:"University tuition scholarships; doctoral researcher positions",url:"https://www.studyinfinland.fi/",note:"Scholarship terms are set by universities. Doctoral funding may be a paid position or grant.",language:"English-taught programmes are available; local language may be useful for daily life.",unis:["University of Helsinki","Aalto University","University of Turku"]},
+{name:"Australia",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"English-taught options",scheme:"Research Training Program (RTP); university research awards",url:"https://www.education.gov.au/research-block-grants/research-training-program",note:"RTP support is administered by participating universities. Check each university's stipend and fee-offset rules.",language:"English; accepted evidence and exemptions vary by institution.",unis:["University of Melbourne","Australian National University","Monash University"]},
+{name:"France",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"Local language may be needed",scheme:"France Excellence / Eiffel scholarship information",url:"https://www.campusfrance.org/en",note:"Check current Eiffel eligibility, application channel and whether the institution must nominate you.",language:"English programmes exist, but French is common and may be required for some programmes.",unis:["Université Paris-Saclay","Sciences Po","Sorbonne University"]},
+{name:"Italy",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's","PhD","Both"],lang:"Local language may be needed",scheme:"Regional DSU awards; MAECI scholarships",url:"https://studyinitaly.esteri.it/",note:"Regional benefits and documents vary by region. Verify income-document rules, translations and deadlines.",language:"Both English- and Italian-taught options; language proof depends on programme.",unis:["University of Bologna","Bocconi University","Sapienza University of Rome"]},
+{name:"Erasmus Mundus",track:["Finance and Economics","Pharmacy and Biotechnology","Both / broad"],degree:["Master's"],lang:"English-taught options",scheme:"Erasmus Mundus Joint Masters scholarships",url:"https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters",note:"Apply to the specific joint Master's programme. Each consortium publishes its own requirements and application timeline.",language:"Many programmes use English; language requirements are set by each consortium.",unis:["Programme consortium varies","Multiple European countries","Joint degree structure"]}
+];
+const universities=[
+["Australian National University","Australia","Finance, Economics & Accounting","Both","https://www.anu.edu.au/"],
+["Monash University","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.monash.edu/"],
+["The University of Melbourne","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unimelb.edu.au/"],
+["The University of Queensland","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uq.edu.au/"],
+["The University of Sydney","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.sydney.edu.au/"],
+["University of Adelaide","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.adelaide.edu.au/"],
+["University of Western Australia","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uwa.edu.au/"],
+["UNSW Sydney","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unsw.edu.au/"],
+["McGill University","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.mcgill.ca/"],
+["McMaster University","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.mcmaster.ca/"],
+["Queen's University","Canada","Finance, Economics & Accounting","Both","https://www.queensu.ca/"],
+["University of Alberta","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ualberta.ca/"],
+["University of British Columbia","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ubc.ca/"],
+["University of Calgary","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ucalgary.ca/"],
+["University of Manitoba","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://umanitoba.ca/"],
+["University of Ottawa","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uottawa.ca/"],
+["University of Toronto","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.utoronto.ca/"],
+["University of Waterloo","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://uwaterloo.ca/"],
+["Western University","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uwo.ca/"],
+["Fudan University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.fudan.edu.cn/en/"],
+["Peking University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://english.pku.edu.cn/"],
+["Shanghai Jiao Tong University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.sjtu.edu.cn/"],
+["Tsinghua University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.tsinghua.edu.cn/en/"],
+["Aalto University","Finland","Finance, Economics & Accounting","Both","https://www.aalto.fi/en"],
+["University of Helsinki","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.helsinki.fi/en"],
+["University of Oulu","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.oulu.fi/en"],
+["University of Turku","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.utu.fi/en"],
+["ESSEC Business School","France","Finance, Economics & Accounting","Both","https://www.essec.edu/en/"],
+["HEC Paris","France","Finance, Economics & Accounting","Both","https://www.hec.edu/en"],
+["Sciences Po","France","Finance & Economics","Both","https://www.sciencespo.fr/en/"],
+["Sorbonne University","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.sorbonne-universite.fr/en"],
+["Université Paris-Saclay","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.universite-paris-saclay.fr/en"],
+["Freie Universität Berlin","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.fu-berlin.de/en/"],
+["Heidelberg University","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-heidelberg.de/en"],
+["Humboldt University of Berlin","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.hu-berlin.de/en"],
+["LMU Munich","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.lmu.de/en/"],
+["RWTH Aachen University","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.rwth-aachen.de/go/id/a/?lidx=1"],
+["Technical University of Munich","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.tum.de/en/"],
+["University of Bonn","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-bonn.de/en"],
+["University of Mannheim","Germany","Finance, Economics & Accounting","Both","https://www.uni-mannheim.de/en/"],
+["Corvinus University of Budapest","Hungary","Finance, Economics & Accounting","Both","https://www.uni-corvinus.hu/?lang=en"],
+["Eötvös Loránd University","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.elte.hu/en/"],
+["Semmelweis University","Hungary","Pharmacy & Biotechnology","Both","https://semmelweis.hu/english/"],
+["University of Debrecen","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://edu.unideb.hu/"],
+["University of Szeged","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://u-szeged.hu/english"],
+["Bocconi University","Italy","Finance, Economics & Accounting","Both","https://www.unibocconi.eu/"],
+["Sapienza University of Rome","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uniroma1.it/en"],
+["University of Bologna","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unibo.it/en"],
+["University of Milan","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unimi.it/en"],
+["University of Padua","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unipd.it/en/"],
+["Kyoto University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.kyoto-u.ac.jp/en"],
+["Osaka University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.osaka-u.ac.jp/en"],
+["Tohoku University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.tohoku.ac.jp/en/"],
+["Tokyo Institute of Science","Japan","Pharmacy & Biotechnology","Both","https://www.isct.ac.jp/en"],
+["University of Tokyo","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.u-tokyo.ac.jp/en/"],
+["Erasmus University Rotterdam","Netherlands","Finance, Economics & Accounting","Both","https://www.eur.nl/en"],
+["Leiden University","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.universiteitleiden.nl/en"],
+["University of Amsterdam","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uva.nl/en"],
+["Utrecht University","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uu.nl/en"],
+["Wageningen University & Research","Netherlands","Pharmacy & Biotechnology / Life Sciences","Both","https://www.wur.nl/en.htm"],
+["KAIST","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.kaist.ac.kr/en/"],
+["Korea University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.korea.edu/mbshome/mbs/en/"],
+["Seoul National University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.snu.ac.kr/"],
+["Sungkyunkwan University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.skku.edu/eng/"],
+["Yonsei University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.yonsei.ac.kr/en_sc/"],
+["Karolinska Institutet","Sweden","Pharmacy & Biotechnology / Life Sciences","Both","https://ki.se/en"],
+["Lund University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.lunduniversity.lu.se/"],
+["Stockholm School of Economics","Sweden","Finance, Economics & Accounting","Both","https://www.hhs.se/en/"],
+["University of Gothenburg","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.gu.se/en"],
+["Uppsala University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uu.se/en"],
+["Imperial College London","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.imperial.ac.uk/"],
+["King's College London","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.kcl.ac.uk/"],
+["London School of Economics and Political Science","United Kingdom","Finance, Economics & Accounting","Both","https://www.lse.ac.uk/"],
+["University College London","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ucl.ac.uk/"],
+["University of Birmingham","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.birmingham.ac.uk/"],
+["University of Bristol","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.bristol.ac.uk/"],
+["University of Cambridge","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.cam.ac.uk/"],
+["University of Edinburgh","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ed.ac.uk/"],
+["University of Glasgow","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.gla.ac.uk/"],
+["University of Manchester","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.manchester.ac.uk/"],
+["University of Nottingham","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.nottingham.ac.uk/"],
+["University of Oxford","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ox.ac.uk/"],
+["Boston University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.bu.edu/"],
+["Columbia University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.columbia.edu/"],
+["Cornell University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.cornell.edu/"],
+["Harvard University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.harvard.edu/"],
+["Johns Hopkins University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.jhu.edu/"],
+["Massachusetts Institute of Technology","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.mit.edu/"],
+["Stanford University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.stanford.edu/"],
+["University of California, Berkeley","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.berkeley.edu/"],
+["University of Michigan","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://umich.edu/"],
+["University of North Carolina at Chapel Hill","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unc.edu/"],
+["University of Pennsylvania","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.upenn.edu/"],
+["University of Washington","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.washington.edu/"],
+["University of Lapland","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ulapland.fi/EN"],
+["University of East Anglia","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uea.ac.uk/"]
+];
+
+// Expanded country lists: additions are official university starting points; verify programmes and current admissions details.
+universities.push(...[
+["Curtin University","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.curtin.edu.au/"],
+["Deakin University","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.deakin.edu.au/"],
+["Griffith University","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.griffith.edu.au/"],
+["La Trobe University","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.latrobe.edu.au/"],
+["Macquarie University","Australia","Finance, Economics & Accounting","Both","https://www.mq.edu.au/"],
+["Queensland University of Technology","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.qut.edu.au/"],
+["RMIT University","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.rmit.edu.au/"],
+["Swinburne University of Technology","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.swinburne.edu.au/"],
+["University of Newcastle","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.newcastle.edu.au/"],
+["University of Tasmania","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.utas.edu.au/"],
+["University of Wollongong","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uow.edu.au/"],
+["Flinders University","Australia","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.flinders.edu.au/"],
+["Dalhousie University","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.dal.ca/"],
+["University of Guelph","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uoguelph.ca/"],
+["Simon Fraser University","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.sfu.ca/"],
+["University of Saskatchewan","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.usask.ca/"],
+["University of Victoria","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uvic.ca/"],
+["York University","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.yorku.ca/"],
+["Carleton University","Canada","Finance, Economics & Accounting","Both","https://carleton.ca/"],
+["Concordia University","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.concordia.ca/"],
+["Université de Montréal","Canada","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.umontreal.ca/en/"],
+["Zhejiang University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.zju.edu.cn/english/"],
+["Nanjing University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.nju.edu.cn/en/"],
+["Wuhan University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.whu.edu.cn/"],
+["Sun Yat-sen University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.sysu.edu.cn/sysuen/"],
+["Tongji University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.tongji.edu.cn/english/"],
+["Xiamen University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.xmu.edu.cn/"],
+["Renmin University of China","China","Finance, Economics & Accounting","Both","https://en.ruc.edu.cn/"],
+["Beijing Normal University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://english.bnu.edu.cn/"],
+["Harbin Institute of Technology","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.hit.edu.cn/"],
+["Xi’an Jiaotong University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.xjtu.edu.cn/"],
+["Sichuan University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://global.scu.edu.cn/"],
+["Shandong University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.sdu.edu.cn/"],
+["Nankai University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.nankai.edu.cn/"],
+["Central South University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.csu.edu.cn/"],
+["East China Normal University","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://english.ecnu.edu.cn/"],
+["University of Science and Technology of China","China","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.ustc.edu.cn/"],
+["Tampere University","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.tuni.fi/en"],
+["LUT University","Finland","Finance, Economics & Accounting","Both","https://www.lut.fi/en"],
+["University of Jyväskylä","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.jyu.fi/en"],
+["Åbo Akademi University","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.abo.fi/en/"],
+["University of Eastern Finland","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uef.fi/en"],
+["Hanken School of Economics","Finland","Finance, Economics & Accounting","Both","https://www.hanken.fi/en"],
+["University of Vaasa","Finland","Finance, Economics & Accounting","Both","https://www.uwasa.fi/en"],
+["Metropolia University of Applied Sciences","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.metropolia.fi/en"],
+["Haaga-Helia University of Applied Sciences","Finland","Finance, Economics & Accounting","Both","https://www.haaga-helia.fi/en"],
+["Turku University of Applied Sciences","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.turkuamk.fi/en/"],
+["Tampere University of Applied Sciences","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.tuni.fi/en/about-us/tamk"],
+["Oulu University of Applied Sciences","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.oamk.fi/en/"],
+["LAB University of Applied Sciences","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://lab.fi/en"],
+["University of the Arts Helsinki","Finland","Finance, Economics & Accounting","Both","https://www.uniarts.fi/en/"],
+["Centria University of Applied Sciences","Finland","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://net.centria.fi/en/"],
+["Université Grenoble Alpes","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.univ-grenoble-alpes.fr/english/"],
+["Université de Strasbourg","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unistra.fr/"],
+["Université de Bordeaux","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.u-bordeaux.com/"],
+["Aix-Marseille University","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.univ-amu.fr/en"],
+["Université de Montpellier","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.umontpellier.fr/en/"],
+["Université de Lille","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.univ-lille.fr/"],
+["Université Côte d’Azur","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://univ-cotedazur.eu/"],
+["Université Claude Bernard Lyon 1","France","Pharmacy & Biotechnology / Life Sciences","Both","https://www.univ-lyon1.fr/"],
+["Université de Lorraine","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.univ-lorraine.fr/"],
+["Université de Nantes","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.univ-nantes.fr/"],
+["Université de Rennes","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.univ-rennes.fr/"],
+["Université Paris Cité","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://u-paris.fr/en/"],
+["Université Paris 1 Panthéon-Sorbonne","France","Finance, Economics & Accounting","Both","https://www.pantheonsorbonne.fr/"],
+["Université de Toulouse","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.univ-tlse3.fr/"],
+["École Polytechnique","France","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.polytechnique.edu/en"],
+["University of Freiburg","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-freiburg.de/"],
+["University of Göttingen","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-goettingen.de/en/"],
+["University of Hamburg","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-hamburg.de/en.html"],
+["University of Cologne","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-koeln.de/en/"],
+["University of Münster","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-muenster.de/en/"],
+["University of Tübingen","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://uni-tuebingen.de/en/"],
+["University of Würzburg","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-wuerzburg.de/en/"],
+["TU Dresden","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://tu-dresden.de/?set_language=en"],
+["Karlsruhe Institute of Technology","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.kit.edu/english/"],
+["University of Stuttgart","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-stuttgart.de/en/"],
+["Goethe University Frankfurt","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.goethe-university-frankfurt.de/en"],
+["University of Duisburg-Essen","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-due.de/en/"],
+["University of Leipzig","Germany","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-leipzig.de/en/"],
+["Budapest University of Technology and Economics","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.bme.hu/?language=en"],
+["University of Pécs","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://international.pte.hu/"],
+["Óbuda University","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://uni-obuda.hu/?lang=en"],
+["Hungarian University of Agriculture and Life Sciences","Hungary","Pharmacy & Biotechnology / Life Sciences","Both","https://en.uni-mate.hu/"],
+["University of Miskolc","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-miskolc.hu/?lang=en"],
+["University of Pannonia","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-pannon.hu/index.php?lang=en"],
+["University of Public Service","Hungary","Finance, Economics & Accounting","Both","https://en.uni-nke.hu/"],
+["Budapest Business University","Hungary","Finance, Economics & Accounting","Both","https://uni-bge.hu/en"],
+["Andrássy University Budapest","Hungary","Finance, Economics & Accounting","Both","https://www.andrassyuni.eu/"],
+["Moholy-Nagy University of Art and Design","Hungary","Finance, Economics & Accounting","Both","https://mome.hu/en"],
+["Eszterházy Károly Catholic University","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://uni-eszterhazy.hu/en"],
+["Károli Gáspár University","Hungary","Finance, Economics & Accounting","Both","https://english.kre.hu/"],
+["University of Sopron","Hungary","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uni-sopron.hu/"],
+["John von Neumann University","Hungary","Finance, Economics & Accounting","Both","https://nje.hu/?lang=en"],
+["International Business School Budapest","Hungary","Finance, Economics & Accounting","Both","https://www.ibs-b.hu/"],
+["Politecnico di Milano","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.polimi.it/en"],
+["Politecnico di Torino","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.polito.it/en"],
+["University of Florence","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unifi.it/changelang-eng.html"],
+["University of Pisa","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unipi.it/index.php/english"],
+["University of Turin","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unito.it/"],
+["University of Trento","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unitn.it/en"],
+["University of Pavia","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://web-en.unipv.it/"],
+["University of Naples Federico II","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unina.it/en_GB/home"],
+["University of Genoa","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://unige.it/en"],
+["University of Siena","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unisi.it/"],
+["University of Ferrara","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unife.it/en"],
+["University of Parma","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unipr.it/en"],
+["University of Verona","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.univr.it/en"],
+["Ca’ Foscari University of Venice","Italy","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.unive.it/web/en/"],
+["LUISS University","Italy","Finance, Economics & Accounting","Both","https://www.luiss.edu/"],
+["Nagoya University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.nagoya-u.ac.jp/"],
+["Hokkaido University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.global.hokudai.ac.jp/"],
+["Kyushu University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.kyushu-u.ac.jp/en/"],
+["University of Tsukuba","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.tsukuba.ac.jp/en/"],
+["Waseda University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.waseda.jp/top/en"],
+["Keio University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.keio.ac.jp/en/"],
+["Hitotsubashi University","Japan","Finance, Economics & Accounting","Both","https://www.hit-u.ac.jp/eng/"],
+["Kobe University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.kobe-u.ac.jp/en/"],
+["Hiroshima University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.hiroshima-u.ac.jp/en"],
+["Chiba University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.chiba-u.ac.jp/e/"],
+["Okayama University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.okayama-u.ac.jp/eng/"],
+["Kanazawa University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.kanazawa-u.ac.jp/e/"],
+["Tokyo University of Agriculture and Technology","Japan","Pharmacy & Biotechnology / Life Sciences","Both","https://www.tuat.ac.jp/en/"],
+["Tokyo Medical and Dental University","Japan","Pharmacy & Biotechnology / Life Sciences","Both","https://www.tmd.ac.jp/english/"],
+["Ritsumeikan University","Japan","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.ritsumei.ac.jp/"],
+["Delft University of Technology","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.tudelft.nl/en/"],
+["Eindhoven University of Technology","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.tue.nl/en/"],
+["University of Groningen","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.rug.nl/?lang=en"],
+["Maastricht University","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.maastrichtuniversity.nl/"],
+["Radboud University","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ru.nl/en"],
+["Tilburg University","Netherlands","Finance, Economics & Accounting","Both","https://www.tilburguniversity.edu/"],
+["University of Twente","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.utwente.nl/en/"],
+["Vrije Universiteit Amsterdam","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://vu.nl/en"],
+["Open University of the Netherlands","Netherlands","Finance, Economics & Accounting","Both","https://www.ou.nl/"],
+["Nyenrode Business University","Netherlands","Finance, Economics & Accounting","Both","https://www.nyenrode.nl/"],
+["HAN University of Applied Sciences","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.hanuniversity.com/en/"],
+["Fontys University of Applied Sciences","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.fontys.nl/en/"],
+["Saxion University of Applied Sciences","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.saxion.edu/"],
+["Amsterdam University of Applied Sciences","Netherlands","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.amsterdamuas.com/"],
+["Breda University of Applied Sciences","Netherlands","Finance, Economics & Accounting","Both","https://www.buas.nl/en"],
+["POSTECH","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.postech.ac.kr/eng/"],
+["Hanyang University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.hanyang.ac.kr/web/eng"],
+["Kyung Hee University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.khu.ac.kr/eng/"],
+["Ewha Womans University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ewha.ac.kr/ewhaen/index.do"],
+["Pusan National University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.pusan.ac.kr/eng/Main.do"],
+["Kyungpook National University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.knu.ac.kr/"],
+["Chung-Ang University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://neweng.cau.ac.kr/"],
+["Gwangju Institute of Science and Technology","South Korea","Pharmacy & Biotechnology / Life Sciences","Both","https://www.gist.ac.kr/en/"],
+["Ulsan National Institute of Science and Technology","South Korea","Pharmacy & Biotechnology / Life Sciences","Both","https://www.unist.ac.kr/eng/"],
+["Ajou University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ajou.ac.kr/en/"],
+["Inha University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://eng.inha.ac.kr/"],
+["Sejong University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://en.sejong.ac.kr/"],
+["Dongguk University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.dongguk.edu/eng/"],
+["Chonnam National University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://international.jnu.ac.kr/"],
+["Jeonbuk National University","South Korea","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.jbnu.ac.kr/eng/"],
+["Chalmers University of Technology","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.chalmers.se/en/"],
+["KTH Royal Institute of Technology","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.kth.se/en"],
+["Linköping University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://liu.se/en"],
+["Umeå University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.umu.se/en/"],
+["Örebro University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.oru.se/english/"],
+["Swedish University of Agricultural Sciences","Sweden","Pharmacy & Biotechnology / Life Sciences","Both","https://www.slu.se/en/"],
+["Karlstad University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.kau.se/en"],
+["Linnaeus University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://lnu.se/en/"],
+["Malmö University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://mau.se/en/"],
+["Mid Sweden University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.miun.se/en/"],
+["Dalarna University","Sweden","Finance, Economics & Accounting","Both","https://www.du.se/en/"],
+["University of Skövde","Sweden","Pharmacy & Biotechnology / Life Sciences","Both","https://www.his.se/en/"],
+["Jönköping University","Sweden","Finance, Economics & Accounting","Both","https://ju.se/en.html"],
+["University of Borås","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.hb.se/en/"],
+["Stockholm University","Sweden","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.su.se/english/"],
+["University of Leeds","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.leeds.ac.uk/"],
+["University of Sheffield","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.sheffield.ac.uk/"],
+["University of Southampton","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.southampton.ac.uk/"],
+["University of Warwick","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://warwick.ac.uk/"],
+["Durham University","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.durham.ac.uk/"],
+["University of York","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.york.ac.uk/"],
+["Queen Mary University of London","United Kingdom","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.qmul.ac.uk/"],
+["University of Wisconsin–Madison","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.wisc.edu/"],
+["University of California, San Diego","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://ucsd.edu/"],
+["University of California, Los Angeles","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.ucla.edu/"],
+["Duke University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://duke.edu/"],
+["Yale University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.yale.edu/"],
+["Princeton University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.princeton.edu/"],
+["University of Chicago","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.uchicago.edu/"],
+["Northwestern University","United States","Finance, Economics & Accounting; Pharmacy & Biotechnology","Both","https://www.northwestern.edu/"]
+].filter(extra => !universities.some(existing => existing[0] === extra[0] && existing[1] === extra[1])));
+const tracks=["Finance and Economics","Pharmacy and Biotechnology"];
+const stepsData={
+masters:["Define subject, degree and intake.","Build a shortlist of 6-10 suitable programmes.","Check entry requirements, tuition and official funding.","Prepare transcripts, CV, SOP and language evidence.","Request recommendations early and confirm submission process.","Submit each application and record confirmation and dates."],
+phd:["Narrow down a research question and methods.","Find departments, labs and relevant faculty papers.","Check whether the route requires a supervisor before applying.","Prepare academic CV, research proposal and writing sample if required.","Ask referees and tailor outreach or application materials.","Apply for admission and funding through the stated channel."],
+gov:["Find the current official call and confirm Bangladesh eligibility.","Read the official guideline, eligible fields and age/degree rules.","Check whether nomination, embassy or university route applies.","Prepare certified records, medical/police documents if required, and references.","Follow the exact portal or embassy submission process.","Save a copy of the submitted application and monitor official updates."]
+};
+const channels=[["Germany","University portal or scholarship provider","Programme, DAAD call and funding terms"],["UK","University portal and/or scholarship portal","Scheme-specific country eligibility and deadlines"],["US / Canada","University graduate admissions portal; sometimes separate scholarship route","Department funding, assistantship and test policies"],["Japan / South Korea / China","Embassy, scholarship portal and/or university route","Current government call and nomination route"],["Europe / Erasmus","University or consortium portal; scheme-specific route","Current programme catalogue and consortium deadline"],["Australia / Finland / Sweden","University admissions portal or advertised doctoral vacancy","Fee status, stipend, contract and funding conditions"]];
+function el(tag,cls,txt){const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n}
+function renderCountries(){const q=$("countrySearch").value.toLowerCase().trim(),tr=$("countryTrack").value,dg=$("countryDegree").value,la=$("countryLang").value;const host=$("countryGrid");host.innerHTML="";let count=0;countries.filter(c=>(!q||[c.name,c.scheme,c.note,c.language,...c.unis].join(" ").toLowerCase().includes(q))&&(!tr||c.track.includes(tr)||c.track.includes("Both / broad"))&&(!dg||c.degree.includes(dg)||c.degree.includes("Both"))&&(!la||c.lang===la)).forEach(c=>{count++;const card=el("article","card country-card"),top=el("div","country-top");top.append(el("h3","",c.name));top.append(el("span","tag",c.degree.join(" / ")));card.append(top);card.append(el("p","",c.note));const sc=el("div","scheme");sc.append(el("strong","",c.scheme));sc.append(el("p","",c.language));const a=el("a","", "Official starting point ↗");a.href=c.url;a.target="_blank";a.rel="noopener";sc.append(a,el("span","tag","Not live-checked"));card.append(sc);card.append(el("div","smalltext","Example institutions: "+c.unis.join(", ")));const save=el("button","btn small",safeStore.get("gs_shortlist",[]).includes(c.name)?"★ Shortlisted":"☆ Add to shortlist");save.type="button";save.onclick=()=>{let arr=safeStore.get("gs_shortlist",[]);if(arr.includes(c.name))arr=arr.filter(x=>x!==c.name);else arr.push(c.name);safeStore.set("gs_shortlist",arr);renderCountries();updateOverview()};card.append(save);host.append(card)});if(!count)host.append(el("div","empty","No matching destinations. Try clearing a filter."));}
+function populateUniFilters(){const countriesList=[...new Set(universities.map(u=>u[1]))].sort((a,b)=>a.localeCompare(b));["uniCountry","matchCountry"].forEach(id=>{const select=$(id);if(!select)return;const keep=select.value;select.innerHTML=id==="uniCountry"?'<option value="">All countries</option>':'<option value="">Open to all countries</option>';countriesList.forEach(country=>{const o=document.createElement("option");o.value=country;o.textContent=country;select.append(o)});select.value=keep})}
+function universityMatchesFilters(u){const q=$("uniSearch").value.toLowerCase().trim(),country=$("uniCountry").value,subject=$("uniTrack").value,degree=$("uniDegree").value,saved=$("uniSaved").value,shortlist=safeStore.get("gs_uni",[]);const text=u.join(" ").toLowerCase();return(!q||text.includes(q))&&(!country||u[1]===country)&&(!subject||(subject==="finance"?/finance|economics|accounting/i.test(u[2]):/pharmacy|biotechnolog|life sciences/i.test(u[2])))&&(!degree||u[3]==="Both"||u[3].includes(degree))&&(!saved||shortlist.includes(u[0]))}
+function universityCard(u){const c=el("article","card");c.append(el("h3","",u[0]),el("p","",u[2]),el("span","tag","Master's and PhD routes to investigate"));const a=el("p");const link=el("a","","Official university website ↗");link.href=u[4];link.target="_blank";link.rel="noopener";a.append(link,document.createTextNode(" · Not live-checked"));c.append(a);const actions=el("div","uni-actions");const mapLink=el("a","btn small primary","📍 Google Maps ↗");mapLink.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(u[0]+", "+u[1]);mapLink.target="_blank";mapLink.rel="noopener noreferrer";mapLink.title="Open "+u[0]+" in Google Maps";actions.append(mapLink);const b=el("button","btn small",safeStore.get("gs_uni",[]).includes(u[0])?"★ Saved":"☆ Save university");b.type="button";b.onclick=()=>{let arr=safeStore.get("gs_uni",[]);if(arr.includes(u[0]))arr=arr.filter(x=>x!==u[0]);else arr.push(u[0]);safeStore.set("gs_uni",arr);renderUniversities();updateOverview()};actions.append(b);c.append(actions);return c}
+
+const mapCountryCenters={
+"Australia":[-25.3,133.8],"Canada":[56.1,-106.3],"China":[35.9,104.2],"Finland":[64.0,26.0],"France":[46.2,2.2],"Germany":[51.2,10.4],"Hungary":[47.2,19.5],"Italy":[41.9,12.6],"Japan":[36.2,138.3],"Netherlands":[52.1,5.3],"South Korea":[36.5,127.9],"Sweden":[60.1,18.6],"United Kingdom":[54.5,-3.4],"UK":[54.5,-3.4],"United States":[39.8,-98.6],"USA":[39.8,-98.6]};
+const uniCityCoords={
+"Australian National University":[-35.28,149.12,"Canberra"],"Monash University":[-37.91,145.13,"Melbourne"],"The University of Melbourne":[-37.80,144.96,"Melbourne"],"The University of Queensland":[-27.50,153.01,"Brisbane"],"The University of Sydney":[-33.89,151.19,"Sydney"],"University of Adelaide":[-34.92,138.60,"Adelaide"],"University of Western Australia":[-31.98,115.82,"Perth"],"UNSW Sydney":[-33.92,151.23,"Sydney"],
+"University of Toronto":[43.66,-79.40,"Toronto"],"McGill University":[45.50,-73.58,"Montreal"],"University of British Columbia":[49.26,-123.25,"Vancouver"],"University of Alberta":[53.52,-113.53,"Edmonton"],"University of Waterloo":[43.47,-80.54,"Waterloo"],"University of Calgary":[51.08,-114.13,"Calgary"],"University of Ottawa":[45.42,-75.68,"Ottawa"],"McMaster University":[43.26,-79.92,"Hamilton"],
+"University of Oxford":[51.75,-1.25,"Oxford"],"University of Cambridge":[52.20,0.12,"Cambridge"],"Imperial College London":[51.50,-0.17,"London"],"University College London":[51.52,-0.13,"London"],"King's College London":[51.51,-0.12,"London"],"London School of Economics":[51.51,-0.12,"London"],"University of Manchester":[53.47,-2.23,"Manchester"],"University of Edinburgh":[55.95,-3.19,"Edinburgh"],"University of Glasgow":[55.87,-4.29,"Glasgow"],"University of Bristol":[51.46,-2.60,"Bristol"],"University of Birmingham":[52.45,-1.93,"Birmingham"],
+"Harvard University":[42.37,-71.12,"Cambridge, Massachusetts"],"Massachusetts Institute of Technology":[42.36,-71.09,"Cambridge, Massachusetts"],"Stanford University":[37.43,-122.17,"Stanford, California"],"University of California, Berkeley":[37.87,-122.26,"Berkeley, California"],"University of California, Los Angeles":[34.07,-118.44,"Los Angeles, California"],"New York University":[40.73,-73.997,"New York"],"Columbia University":[40.81,-73.96,"New York"],"University of Chicago":[41.79,-87.60,"Chicago"],"Yale University":[41.32,-72.92,"New Haven"],"Princeton University":[40.35,-74.66,"Princeton"],"University of Pennsylvania":[39.95,-75.19,"Philadelphia"],"Johns Hopkins University":[39.33,-76.62,"Baltimore"],"Duke University":[36.00,-78.94,"Durham, North Carolina"],"University of Michigan":[42.28,-83.74,"Ann Arbor"],"Cornell University":[42.45,-76.48,"Ithaca"],
+"University of Tokyo":[35.71,139.76,"Tokyo"],"Kyoto University":[35.03,135.78,"Kyoto"],"Osaka University":[34.82,135.52,"Osaka"],"Seoul National University":[37.46,126.95,"Seoul"],"KAIST":[36.37,127.36,"Daejeon"],"Yonsei University":[37.56,126.94,"Seoul"],"Tsinghua University":[40.00,116.33,"Beijing"],"Peking University":[39.99,116.31,"Beijing"],"Fudan University":[31.30,121.50,"Shanghai"],"Shanghai Jiao Tong University":[31.20,121.43,"Shanghai"],
+"University of Munich":[48.15,11.58,"Munich"],"Ludwig Maximilian University":[48.15,11.58,"Munich"],"Technical University of Munich":[48.15,11.57,"Munich"],"Heidelberg University":[49.41,8.71,"Heidelberg"],"Humboldt University":[52.52,13.39,"Berlin"],"Free University of Berlin":[52.45,13.29,"Berlin"],"University of Bonn":[50.73,7.10,"Bonn"],"University of Hamburg":[53.57,9.97,"Hamburg"],"University of Amsterdam":[52.36,4.95,"Amsterdam"],"Delft University":[52.00,4.37,"Delft"],"Leiden University":[52.16,4.48,"Leiden"],"Utrecht University":[52.09,5.12,"Utrecht"],"Erasmus University Rotterdam":[51.92,4.53,"Rotterdam"],
+"Sorbonne University":[48.85,2.34,"Paris"],"Université Paris":[48.85,2.34,"Paris"],"University of Bologna":[44.49,11.35,"Bologna"],"Sapienza University":[41.90,12.51,"Rome"],"University of Milan":[45.46,9.19,"Milan"],"University of Helsinki":[60.17,24.95,"Helsinki"],"Lund University":[55.71,13.20,"Lund"],"Uppsala University":[59.86,17.64,"Uppsala"],"University of Copenhagen":[55.68,12.57,"Copenhagen"],"University of Warsaw":[52.23,21.01,"Warsaw"],"ETH Zurich":[47.38,8.55,"Zurich"],"University of Zurich":[47.37,8.55,"Zurich"],"University of Vienna":[48.21,16.36,"Vienna"],"University of Hong Kong":[22.28,114.14,"Hong Kong"]
+};
+// Google Maps JavaScript API key: paste your key from Google Cloud Console here.
+// Enable Maps JavaScript API and configure billing in the same Google Cloud project.
+const GOOGLE_MAPS_API_KEY = "";
+let universityMap=null, universityMapLayer=null, universityMarkers=new Map(), universityInfoWindow=null, googleMapsLoadStarted=false;
+function mapLocation(u,index){
+ const exact=uniCityCoords[u[0]];
+ if(exact)return {lat:exact[0],lng:exact[1],place:exact[2],precise:true};
+ const center=mapCountryCenters[u[1]];
+ if(center){const angle=(index*2.399963),radius=0.18+((index%7)*0.055);return {lat:center[0]+Math.sin(angle)*radius,lng:center[1]+Math.cos(angle)*radius,place:u[1]+" (approximate country position)",precise:false}}
+ return {lat:20,lng:0,place:"Location not mapped",precise:false};
+}
+function initUniversityMap(){
+ const host=$("universityMap");if(!host)return;
+ if(window.google&&window.google.maps){createGoogleUniversityMap();return}
+ if(!GOOGLE_MAPS_API_KEY||GOOGLE_MAPS_API_KEY.includes("PASTE_YOUR_")){$("mapPinCount").textContent="Add your Google Maps API key in GOOGLE_MAPS_API_KEY to load the map";return}
+ if(googleMapsLoadStarted)return;
+ googleMapsLoadStarted=true;
+ window.initGoogleUniversityMap=()=>createGoogleUniversityMap();
+ const script=document.createElement("script");
+ script.src="https://maps.googleapis.com/maps/api/js?key="+encodeURIComponent(GOOGLE_MAPS_API_KEY)+"&callback=initGoogleUniversityMap&loading=async";
+ script.async=true;script.defer=true;
+ script.onerror=()=>{$("mapPinCount").textContent="Google Maps could not load. Check the API key, billing, API enablement and browser console.";googleMapsLoadStarted=false};
+ document.head.appendChild(script);
+}
+function createGoogleUniversityMap(){
+ const host=$("universityMap");if(!host||!window.google||!google.maps)return;
+ if(!universityMap){
+  universityMap=new google.maps.Map(host,{center:{lat:25,lng:5},zoom:2,mapTypeControl:true,streetViewControl:false,fullscreenControl:true,gestureHandling:"greedy"});
+  universityInfoWindow=new google.maps.InfoWindow();
+  universityMapLayer=[];
+ }
+ renderUniversityMap();
+ setTimeout(()=>{if(universityMap){google.maps.event.trigger(universityMap,"resize");}},250);
+}
+function clearGoogleMarkers(){universityMapLayer.forEach(marker=>marker.setMap(null));universityMapLayer=[];universityMarkers.clear()}
+function makeUniversityMarker(u,loc){
+ const marker=new google.maps.Marker({position:{lat:loc.lat,lng:loc.lng},map:universityMap,title:u[0]});
+ const content=`<div class="map-popup"><strong>${escapeHtml(u[0])}</strong><br>${escapeHtml(loc.place)}${loc.precise?"":" · approximate"}<br><small>${escapeHtml(u[2])}</small><br><a href="${u[4]}" target="_blank" rel="noopener">Official university website ↗</a></div>`;
+ marker.addListener("click",()=>{universityInfoWindow.setContent(content);universityInfoWindow.open({map:universityMap,anchor:marker})});
+ universityMapLayer.push(marker);universityMarkers.set(u[0],{marker,loc,u});return marker;
+}
+function renderUniversityMap(){
+ if(!universityMap||!universityMapLayer)return;
+ clearGoogleMarkers();
+ const list=universities.filter(universityMatchesFilters);const bounds=new google.maps.LatLngBounds();
+ list.forEach((u,i)=>{const loc=mapLocation(u,i);makeUniversityMarker(u,loc);bounds.extend({lat:loc.lat,lng:loc.lng})});
+ $("mapPinCount").textContent=`${list.length} map pins · ${list.filter(u=>uniCityCoords[u[0]]).length} city-level locations`;
+ if(list.length){if($("uniCountry").value){const c=mapCountryCenters[list[0][1]];if(c)universityMap.setCenter({lat:c[0],lng:c[1]}),universityMap.setZoom(5);else universityMap.fitBounds(bounds)}else if(list.length<25){universityMap.fitBounds(bounds);google.maps.event.addListenerOnce(universityMap,"bounds_changed",()=>{if(universityMap.getZoom()>6)universityMap.setZoom(6)})}else{universityMap.setCenter({lat:25,lng:5});universityMap.setZoom(2)}}
+}
+function showUniversityOnMap(u){
+ // Keep the directory filters unchanged; focus the map on the selected university.
+ showTab("universities");
+ const fallback="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(u[0]+", "+u[1]);
+ if(!(window.google&&window.google.maps)){initUniversityMap();setTimeout(()=>{if(!(window.google&&window.google.maps))window.open(fallback,"_blank","noopener")},700);return}
+ if(!universityMap)createGoogleUniversityMap();
+ setTimeout(()=>{
+  if(!universityMap){window.open(fallback,"_blank","noopener");return}
+  let found=universityMarkers.get(u[0]);
+  if(!found){const idx=universities.findIndex(x=>x[0]===u[0]);const loc=mapLocation(u,Math.max(idx,0));const marker=makeUniversityMarker(u,loc);found={marker,loc,u}}
+  universityMap.setCenter({lat:found.loc.lat,lng:found.loc.lng});universityMap.setZoom(found.loc.precise?12:5);
+  const content=`<div class="map-popup"><strong>${escapeHtml(u[0])}</strong><br>${escapeHtml(found.loc.place)}${found.loc.precise?"":" · approximate"}<br><small>${escapeHtml(u[2])}</small><br><a href="${u[4]}" target="_blank" rel="noopener">Official university website ↗</a></div>`;
+  universityInfoWindow.setContent(content);universityInfoWindow.open({map:universityMap,anchor:found.marker});
+  const mapCard=document.querySelector(".map-card");if(mapCard)mapCard.scrollIntoView({behavior:"smooth",block:"start"});
+ },250);
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+
+function renderUniversities(){const host=$("uniGrid");host.innerHTML="";const list=universities.filter(universityMatchesFilters).sort((a,b)=>a[1].localeCompare(b[1])||a[0].localeCompare(b[0]));$("uniCount").textContent=`Showing ${list.length} of ${universities.length} universities. Countries and university names are sorted alphabetically.`;let countryNow="";list.forEach(u=>{if(u[1]!==countryNow){countryNow=u[1];const heading=el("div","country-heading");heading.style.cssText="grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;padding:10px 2px 2px;border-bottom:1px solid var(--line);margin-top:6px";heading.append(el("h3","",countryNow),el("span","tag",`${list.filter(x=>x[1]===countryNow).length} listed`));host.append(heading)}host.append(universityCard(u))});if(!list.length)host.append(el("div","empty","No universities match these filters. Try another country, subject or search term."));renderUniversityMap()}
+function runUniversityMatch(){const track=$("matchTrack").value,degree=$("matchDegree").value,funding=$("matchFunding").value,country=$("matchCountry").value,notes=$("matchNotes").value.trim();const isBio=track==="Pharmacy and Biotechnology";const relevant=universities.filter(u=>country?u[1]===country:true).map(u=>{const subjectFit=isBio?/pharmacy|biotechnolog|life sciences/i.test(u[2]):/finance|economics|accounting/i.test(u[2]);let score=subjectFit?60:20;if(u[3]==="Both"||u[3].includes(degree))score+=15;if(country&&u[1]===country)score+=15;if(funding==="Fully funded")score+=5;return{u,score,subjectFit}}).filter(x=>x.subjectFit).sort((a,b)=>b.score-a.score||a.u[1].localeCompare(b.u[1])||a.u[0].localeCompare(b.u[0])).slice(0,8);const host=$("matchResults");host.innerHTML="";const intro=el("div","card");intro.style.gridColumn="1/-1";intro.append(el("h3","","Your starting shortlist"),el("p","",`Prioritised for ${track}, ${degree}, ${funding.toLowerCase()} funding preference${country?`, and ${country}`:""}. The directory does not contain verified current funding or programme availability, so these are research leads rather than confirmed matches.`));if(notes)intro.append(el("p","smalltext","Background provided: "+notes));host.append(intro);if(!relevant.length){host.append(el("div","empty","No matching subject tags found for this country. Try another country or broaden the subject filter."));return}relevant.forEach((x,i)=>{const c=universityCard(x.u);const reason=el("p","smalltext",`${i+1}. Subject tag matches your selected field. Check the exact programme, entry criteria, language, supervisor rules and funding route on the official site.`);c.prepend(reason);host.append(c)})}
+function renderSimpleChecks(id,items){const host=$(id);host.innerHTML="";items.forEach((t,i)=>{const row=el("label","checkrow"),cb=document.createElement("input");cb.type="checkbox";cb.checked=!!safeStore.get("gs_applychecks",{})[id+"-"+i];cb.onchange=()=>{let o=safeStore.get("gs_applychecks",{});o[id+"-"+i]=cb.checked;safeStore.set("gs_applychecks",o);row.classList.toggle("done",cb.checked)};const span=el("span","",t);row.append(cb,span);if(cb.checked)row.classList.add("done");host.append(row)})}
+stepsData.masters&&renderSimpleChecks("mastersSteps",stepsData.masters);renderSimpleChecks("phdSteps",stepsData.phd);renderSimpleChecks("govSteps",stepsData.gov);
+$("channelRows").innerHTML=channels.map(r=>"<tr>"+r.map(x=>`<td style="padding:11px 8px;border-top:1px solid var(--line)">${x.replace(/&/g,"&amp;").replace(/</g,"&lt;")}</td>`).join("")+"</tr>").join("");
+const uniChecks1=["Check the exact degree and entry requirements.","Confirm tuition fee status for international students.","Read the department's funding and scholarship pages.","Check English-test rules and possible waivers."],uniChecks2=["Confirm whether a supervisor is required before applying.","Check document formats, translations and certification.","Record official deadline and time zone.","Check visa and proof-of-funds rules from official sources."];
+renderSimpleChecks("uniChecklistA",uniChecks1);renderSimpleChecks("uniChecklistB",uniChecks2);
+function createPlan(){const tr=$("track").value,dg=$("degree").value,fu=$("funding").value,lang=$("language").value,intake=$("intake").value;const box=$("planResult");if(!tr||!dg||!fu){box.innerHTML='<p>Please choose your academic track, target degree and funding priority first.</p>';return}let route=dg==="PhD"?"Prioritise funded doctoral vacancies, department funding pages and potential supervisor fit.":dg==="Master's"?"Compare scholarship schemes, university awards and affordable public-university programmes.":"Compare Master's scholarship routes and funded PhD routes separately.";if(fu==="Fully funded only")route+=" Focus first on opportunities that explicitly state full funding, including what costs are covered.";if(lang==="English-taught")route+=" Filter for English-taught programmes and verify accepted language evidence.";const items=[`Choose 2-3 subfields within ${tr}.`,`Build a shortlist of 8-12 programmes for ${dg}.`,`Verify funding details and official deadlines for each programme.`,`Prepare CV, transcripts, statement and referee list.`,`Create a tracker for ${intake||"your target intake"} with links and next actions.`];box.innerHTML="";box.append(el("p","",route));const list=el("div","checklist");items.forEach((t,i)=>{const row=el("label","checkrow"),cb=document.createElement("input");cb.type="checkbox";cb.onchange=()=>row.classList.toggle("done",cb.checked);row.append(cb,el("span","",t));list.append(row)});box.append(list);safeStore.set("gs_profile",{tr,dg,fu,lang,intake,budget:$("budget").value});$("nextAction").textContent="Shortlist programmes";updateOverview()}
+["track","degree","funding","language","intake","budget"].forEach(id=>$(id).addEventListener("change",()=>safeStore.set("gs_profile",{tr:$("track").value,dg:$("degree").value,fu:$("funding").value,lang:$("language").value,intake:$("intake").value,budget:$("budget").value})));
+$("makePlan").onclick=createPlan;
+$("countrySearch").addEventListener("input",renderCountries);["countryTrack","countryDegree","countryLang"].forEach(id=>$(id).addEventListener("change",renderCountries));
+$("clearFilters").onclick=()=>{$("countrySearch").value="";$("countryTrack").value="";$("countryDegree").value="";$("countryLang").value="";renderCountries()};
+populateUniFilters();
+$("uniSearch").addEventListener("input",renderUniversities);
+["uniCountry","uniTrack","uniDegree","uniSaved"].forEach(id=>$(id).addEventListener("change",renderUniversities));
+$("runMatch").addEventListener("click",runUniversityMatch);
+document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));
+document.querySelectorAll("[data-goto]").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.goto)));
+function showTab(id){document.querySelectorAll(".tab").forEach(b=>{const active=b.dataset.tab===id;b.classList.toggle("active",active);b.setAttribute("aria-selected",String(active))});document.querySelectorAll(".section").forEach(s=>s.classList.toggle("active",s.id===id));window.scrollTo({top:0,behavior:"smooth"})}
+$("themeBtn").onclick=()=>{const t=document.documentElement.dataset.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=t;safeStore.set("gs_theme",t)};
+if(safeStore.get("gs_theme","light")==="dark")document.documentElement.dataset.theme="dark";
+$("printBtn").onclick=()=>window.print();
+$("generateEmail").onclick=()=>{const val=(id,placeholder)=>$(id).value.trim()||placeholder;const name=val("yourName","[Your full name]"),degree=val("yourDegree","[Current degree and institution]"),prof=val("profName","[Professor's name]"),work=val("profWork","[Paper title or research area]"),interest=val("yourInterest","[Briefly describe your research interest]"),target=val("targetDegree","[PhD/Master's, programme, intake]");$("emailSubject").value=`Prospective applicant interested in ${work}`;$("emailDraft").value=`Dear ${prof},\n\nI hope you are doing well. My name is ${name}, and I am ${degree}.\n\nI read your work on ${work} and was interested in how it relates to ${interest}.\n\nI am exploring ${target} opportunities and would be grateful to know whether you expect to consider students in this area. I would be happy to share my CV and further information if helpful.\n\nThank you for your time and consideration.\n\nBest regards,\n${name}`};
+$("clearEmail").onclick=()=>{["yourName","yourDegree","profName","profWork","yourInterest","targetDegree"].forEach(id=>$(id).value="");$("emailSubject").value="Prospective [PhD/Master's] applicant interested in [research area]";$("emailDraft").value="Dear [Professor's name],\n\nI hope you are doing well. My name is [Your full name], and I am [Current degree and institution].\n\nI read your work on [Paper title or research area] and was interested in how it relates to [Briefly describe your research interest].\n\nI am exploring [PhD/Master's, programme, intake] opportunities and would be grateful to know whether you expect to consider students in this area. I would be happy to share my CV and further information if helpful.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your full name]";$("copyMsg").textContent=""};
+$("copyEmail").onclick=async()=>{const txt="Subject: "+$("emailSubject").value+"\n\n"+$("emailDraft").value;try{await navigator.clipboard.writeText(txt);$("copyMsg").textContent=" Copied to clipboard."}catch(e){$("emailDraft").focus();$("emailDraft").select();$("copyMsg").textContent=" Select the highlighted text and copy it manually."}};
+const wizardSteps=["Account","Details","Programme","Documents","Review","Submit & track"];let wizardIndex=0;let wizardData={type:"Master's",name:"",email:"",country:"Germany",programme:"",docs:[]};
+function renderWizard(){const bar=$("wizardBar");bar.innerHTML="";wizardSteps.forEach((s,i)=>{const p=el("span","wizardstep"+(i===wizardIndex?" current":i<wizardIndex?" done":""),`${i+1}. ${s}`);bar.append(p)});const host=$("wizardContent");host.innerHTML="";$("wizardMsg").textContent="";$("wizardBack").disabled=wizardIndex===0;$("wizardNext").classList.toggle("hidden",wizardIndex===5);$("wizardRestart").classList.toggle("hidden",wizardIndex!==5);
+if(wizardIndex===0){host.append(el("h3","","Create a demo profile"));host.append(el("p","muted","No password is needed. Use example details only."));field(host,"Application type","type","select",["Master's","PhD","Government scholarship"]);field(host,"Demo display name","name","input",null,"[Your name]");field(host,"Email (optional, do not use sensitive data)","email","input",null,"name@example.com")}
+if(wizardIndex===1){host.append(el("h3","","Basic details"));host.append(el("p","muted","Use only fictional or non-sensitive information."));field(host,"Country of interest","country","select",countries.map(c=>c.name));field(host,"Target intake","intake","input",null,"e.g. 2028");}
+if(wizardIndex===2){host.append(el("h3","","Programme details"));field(host,"Programme / subject","programme","input",null,"[Programme name]");field(host,"Academic track","track2","select",["Finance and Economics","Pharmacy and Biotechnology","Other"]);field(host,"Funding preference","funding2","select",["Fully funded","Tuition support","Self-funded / exploring"])}
+if(wizardIndex===3){host.append(el("h3","","Document checklist"));host.append(el("p","muted","Checklist adapts to the application type. Checking items is only for practice."));const docs=wizardData.type==="PhD"?["Academic CV","Transcripts and certificates","Research proposal (if required)","Writing sample (if required)","Recommendation contacts","Language evidence (if required)"]:wizardData.type==="Government scholarship"?["Official application form","Academic transcripts","Passport / identity document (do not upload here)","Recommendation letters","Study plan or statement","Required medical or supporting forms"]:["Academic CV","Transcripts and certificates","Statement of purpose","Recommendation letters","Language evidence (if required)"];docs.forEach(d=>{const row=el("label","checkrow"),cb=document.createElement("input");cb.type="checkbox";cb.checked=wizardData.docs.includes(d);cb.onchange=()=>{wizardData.docs=cb.checked?[...wizardData.docs,d]:wizardData.docs.filter(x=>x!==d)};row.append(cb,el("span","",d));host.append(row)})}
+if(wizardIndex===4){host.append(el("h3","","Review your demo"));const review=el("div","result",`Application type: ${wizardData.type}\nName: ${wizardData.name||"[Not entered]"}\nEmail: ${wizardData.email||"[Not entered]"}\nCountry: ${wizardData.country||"[Not selected]"}\nProgramme: ${wizardData.programme||"[Not entered]"}\nChecklist items checked: ${wizardData.docs.length}`);host.append(review);host.append(el("p","muted","This review is local to this page and will not be sent anywhere."))}
+if(wizardIndex===5){host.append(el("h3","","Demo complete"));host.append(el("p","muted","This is a fictional reference for practicing a status tracker. It is not a real application ID."));const ref="DEMO-"+Math.random().toString(36).slice(2,8).toUpperCase();host.append(el("div","result",`Reference: ${ref}\nStatus: Practice application completed\nNext step: Verify the actual institution's official application process.\n\nNothing has been submitted or saved.`));const prog=el("div","checklist");["Draft created","Documents reviewed","Practice submission complete"].forEach((x,i)=>{const r=el("div","checkrow");r.append(el("span","",x),el("span","pill","Complete"));prog.append(r)});host.append(prog)}
+}
+function field(host,label,key,type,opts,placeholder){const wrap=el("div","field");const lab=el("label","",label);lab.htmlFor="wiz_"+key;wrap.append(lab);let input;if(type==="select"){input=document.createElement("select");opts.forEach(o=>{const op=document.createElement("option");op.value=o;op.textContent=o;input.append(op)});input.value=wizardData[key]||opts[0]}else{input=document.createElement("input");input.type="text";input.placeholder=placeholder||"";input.value=wizardData[key]||""}input.id="wiz_"+key;input.oninput=()=>wizardData[key]=input.value;input.onchange=()=>wizardData[key]=input.value;wrap.append(input);host.append(wrap)}
+$("wizardNext").onclick=()=>{if(wizardIndex===0){wizardData.type=$("wiz_type").value;wizardData.name=$("wiz_name").value.trim();wizardData.email=$("wiz_email").value.trim();if(wizardData.email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(wizardData.email)){$("wizardMsg").textContent="Please enter a demo email in a valid format or leave it blank.";return}}if(wizardIndex===1){wizardData.country=$("wiz_country").value;wizardData.intake=$("wiz_intake").value}if(wizardIndex===2){wizardData.programme=$("wiz_programme").value;wizardData.track2=$("wiz_track2").value;wizardData.funding2=$("wiz_funding2").value}wizardIndex=Math.min(5,wizardIndex+1);renderWizard()};
+$("wizardBack").onclick=()=>{wizardIndex=Math.max(0,wizardIndex-1);renderWizard()};$("wizardRestart").onclick=()=>{wizardIndex=0;wizardData={type:"Master's",name:"",email:"",country:"Germany",programme:"",docs:[]};renderWizard()};
+const phases=[["Clarify goals",["Choose target degree","Select academic track","Set target intake"]],["Academic profile",["Collect transcripts","Calculate GPA / grading context","Update academic CV"]],["Language readiness",["Check accepted language tests","Plan test date if needed","Check waiver rules"]],["Research programmes",["Create longlist","Verify official programme pages","Shortlist suitable programmes"]],["Funding search",["Check official scholarship calls","Verify Bangladesh eligibility","Record funding coverage"]],["Documents",["Draft statement of purpose","Contact referees","Prepare certified translations if needed"]],["Professor outreach",["Read recent relevant papers","Prepare tailored email","Track replies and follow-ups"]],["Applications",["Record deadlines and time zones","Submit through official portals","Save confirmation receipts"]],["After submission",["Monitor application portals","Prepare interview notes","Verify visa process from official sources"]]];
+let roadmap=safeStore.get("gs_roadmap",null)||phases.flatMap((p,pi)=>p[1].map((t,i)=>({id:`${pi}-${i}`,phase:p[0],text:t,done:false,custom:false})));
+function saveRoadmap(){safeStore.set("gs_roadmap",roadmap);renderRoadmap();updateOverview()}
+function renderRoadmap(){const host=$("roadmapGroups");host.innerHTML="";phases.forEach((p,pi)=>{const card=el("div","card"),head=el("div","check-title");head.append(el("h3","",`${pi+1}. ${p[0]}`));const items=roadmap.filter(x=>x.phase===p[0]);head.append(el("span","tag",`${items.filter(x=>x.done).length}/${items.length}`));card.append(head);const list=el("div","checklist");items.forEach(item=>{const row=el("label","checkrow"+(item.done?" done":"")),cb=document.createElement("input");cb.type="checkbox";cb.checked=item.done;cb.onchange=()=>{item.done=cb.checked;saveRoadmap()};row.append(cb,el("span","",item.text));if(item.custom){const del=el("button","btn small","×");del.type="button";del.setAttribute("aria-label","Delete custom task");del.onclick=e=>{e.preventDefault();roadmap=roadmap.filter(x=>x.id!==item.id);saveRoadmap()};row.append(del)}list.append(row)});card.append(list);host.append(card)});roadmap.filter(x=>x.custom).forEach(item=>{const card=el("div","card"),row=el("label","checkrow"+(item.done?" done":"")),cb=document.createElement("input");cb.type="checkbox";cb.checked=item.done;cb.onchange=()=>{item.done=cb.checked;saveRoadmap()};row.append(cb,el("span","",item.text));const del=el("button","btn small","×");del.onclick=()=>{roadmap=roadmap.filter(x=>x.id!==item.id);saveRoadmap()};row.append(del);card.append(el("h3","","Custom task"),row);host.append(card)});const done=roadmap.filter(x=>x.done).length,total=roadmap.length,pct=total?Math.round(done/total*100):0;$("roadmapCount").textContent=`${done} of ${total} tasks complete`;$("roadmapPercent").textContent=pct+"%";$("roadmapProgress").style.width=pct+"%"}
+$("addTask").onclick=()=>{const v=$("customTask").value.trim();if(!v)return;roadmap.push({id:"custom-"+Date.now(),phase:"Custom",text:v,done:false,custom:true});$("customTask").value="";const host=$("roadmapGroups");const card=el("div","card"),row=el("label","checkrow"),cb=document.createElement("input");cb.type="checkbox";cb.onchange=()=>{roadmap.find(x=>x.text===v&&x.custom&&!x.done).done=cb.checked;saveRoadmap()};row.append(cb,el("span","",v));card.append(el("h3","","Custom task"),row);host.append(card);saveRoadmap()};
+$("resetRoadmap").onclick=()=>{if(confirm("Reset all roadmap tasks and remove custom tasks?")){roadmap=phases.flatMap((p,pi)=>p[1].map((t,i)=>({id:`${pi}-${i}`,phase:p[0],text:t,done:false,custom:false})));saveRoadmap()}};
+function updateOverview(){const done=roadmap.filter(x=>x.done).length,pct=Math.round(done/Math.max(roadmap.length,1)*100);$("heroPct").textContent=pct+"%";$("heroProgress").style.width=pct+"%";$("shortlistCount").textContent=safeStore.get("gs_shortlist",[]).length+safeStore.get("gs_uni",[]).length;if(!safeStore.get("gs_profile",null))$("nextAction").textContent="Choose your track";else $("nextAction").textContent=done<roadmap.length?"Continue roadmap":"Review shortlist"}
+const profile=safeStore.get("gs_profile",null);if(profile){$("track").value=profile.tr||"";$("degree").value=profile.dg||"";$("funding").value=profile.fu||"";$("language").value=profile.lang||"";$("intake").value=profile.intake||"";$("budget").value=profile.budget||""}
+renderCountries();renderUniversities();renderWizard();renderRoadmap();updateOverview();
+</script>
+</body></html>
